@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit Logs Viewer - Test Page</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    
+    header {
+      margin-bottom: 20px;
+    }
+    
+    h1 {
+      color: #333;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .info {
+      background-color: #e3f2fd;
+      padding: 15px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    
+    .component-container {
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      padding: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Audit Logs Viewer - Test Page</h1>
+    </header>
+    
+    <div class="info">
+      <p><strong>Note:</strong> This is a test page for the Audit Logs Viewer web component. 
+      In a production environment, this component would be embedded within Facets.cloud 
+      and would use the authenticated session for API calls.</p>
+      <p>For testing purposes, you'll need to be logged into Facets in another tab or 
+      simulate API responses if working offline.</p>
+    </div>
+    
+    <div class="component-container">
+      <!-- Web Component will be rendered here -->
+      <audit-logs-viewer></audit-logs-viewer>
+    </div>
+  </div>
+  
+  <!-- Load the web component script -->
+  <script src="audit-logs.js"></script>
+</body>
+</html>
